@@ -8,6 +8,9 @@
 
 body{
 }
+html{
+    scroll-behavior: smooth;
+}
 
 
 /*Cabeçalho -----------*/
@@ -232,7 +235,7 @@ body{
     padding-bottom: 20px;
 }
 .bloco-sobre h3{
-    font-size: 28px;
+    font-size: 30px;
     text-indent: 25px;
     font-weight: bold;
     padding-top: 40px;
@@ -240,8 +243,8 @@ body{
     text-align: center;
 }
 .bloco-sobre p{
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: 400;
     text-align: left;
     margin-left: 20px;
     padding-top:20px    ;
@@ -253,6 +256,9 @@ body{
     justify-content: center;
     align-items: center;
     width: 95%;
+}
+.bloco-sobre-p-img{
+    width: 65%;
 }
 .bloco-sobre-text{
     display: flex;
@@ -307,13 +313,13 @@ body{
     width: 65%;
 }
 .bloco-como-ingressar p{
-    font-size: 20px;
+    font-size: 25px;
     text-align: left;
     margin-left: 20px;
     padding-top:20px    ;
     padding-bottom: 20px;
 }.bloco-como-ingressar h3{
-    font-size: 28px;
+    font-size: 30px;
     text-indent: 25px;
     font-weight: bold;
     padding-top: 40px;
@@ -336,9 +342,79 @@ body{
 
 .bloco-curso{
     background-color: #F7F8F8;
+    color: #5588A4;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.bloco-curso h2{
+    font-size: 40px;
+    text-indent: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.bloco-curso h3{
+    font-size: 30px;
+    text-indent: 25px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.bloco-curso p, pre{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 20px;
+    padding-top:20px    ;
+    padding-bottom: 20px;
 }
 
+#img-nota-corte{
+    width: 65%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 300px;
+}
+.bloco-curso-faculdades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-self: center;
+    width: 700px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+.alinhar-bloco-faculdades{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bloco-curso-faculdades img{
+    width: 200px;
+}
+
+
 /*------------ Bloco curso*/
+
+/*Bloco mesclar - curso + mercado de trabalho ----------*/
+.bloco-mesclar-curso--mercado-trabalho{
+    position: absolute;
+    width: 85%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: -70px;
+}
+#img-mesclagem-curso-mercadoDeTrabalho{
+    border-radius: 100px;
+    box-shadow: 15px 15px 2px #000000;
+    width: 400px;
+    height: 250px;
+}
+/*----------- Bloco mesclar - curso + como mercado de trabalho*/
+
 
 
 
@@ -347,7 +423,35 @@ body{
 
 .bloco-Mercado-Trabalho{
     background-color: #A2C7DB;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+.bloco-Mercado-Trabalho h2{
+    font-size: 40px;
+    text-indent: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.bloco-Mercado-Trabalho h3{
+    font-size: 30px;
+    text-indent: 25px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.bloco-Mercado-Trabalho p{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 20px;
+    padding-top:20px    ;
+    padding-bottom: 20px;
+}
+
 
 /*------------ Bloco mercado de trabalho*/
 
@@ -356,6 +460,8 @@ body{
 /*Rodapé ------------*/
 .rodapé{
     background-color: #000000;
-    height: 200px;
+    background-image: url(../imagens/footer_background.PNG);
+    background-size: 100% 100%;
+    height: 300px;
 }
 /*---------- Rodapé*/

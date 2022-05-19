@@ -12,14 +12,16 @@
 <body>
     <header class="header">
         <nav class="menu">            
-            <a href="#">Sobre  &or;</a>
-            <a href="#">Como Ingressar  &or;</a>
-            <a href="#">Curso  &or;</a>
-            <a href="#">Mercado de Trabalho  &or;</a>            
+            <a href="#ancora_sobre">Sobre  </a>
+            <a href="#ancora_comoIngressar">Como Ingressar  </a>
+            <a href="#ancora_curso">Curso  </a>
+            <a href="#ancora_mercadoTrabalho">Mercado de Trabalho  </a>            
         </nav>
         <div class="header-main">
             <h1>Análise e Desenvolvimento de Sistemas</h1>
-            <button>Conhecer Curso</button>
+            <form action="#ancora-introducao">
+                <button type="submit">Conhecer Curso</button>
+            </form>
         </div>
         
     </header>
@@ -42,7 +44,7 @@
                 </table>
             </div>
         </div>
-        <div class="header-secundário-texto">
+        <div class="header-secundário-texto" id="ancora-introducao">
             <p>O curso técnico de Análise e Desenvolvimento de Sistemas é encontrado em cerca de 400 faculdades por todo o país e tem uma formação focada totalmente na atuação do analista de sistemas, o que permite uma entrada mais fácil no mercado de trabalho. É considerado um curso muito específico, recomendado para quem quer se posicionar mais rapidamente na carreira.</p>
         </div>
 
@@ -64,7 +66,7 @@
 
 
 
-    <div class="bloco-sobre">
+    <div class="bloco-sobre" id="ancora_sobre">
         <h2>Sobre</h2>
         <p>O curso de Análise e Desenvolvimento de Sistemas forma profissionais capazes de desenvolver, analisar,
             projetar, implementar e atualizar sistemas de informação para diversos setores de atividades.
@@ -86,14 +88,17 @@
             <p>Segundo as Diretrizes Curriculares Nacionais definidas pelo Ministério da Educação (MEC), a formação em Análise e Desenvolvimento de Sistemas se enquadra como um curso tecnológico da área de Informação e Comunicação. Por isso, deve apresentar conteúdos gerais sobre esse campo, além dos conteúdos específicos da área.</p>
             <P>Há muitas disciplinas de ciências exatas e atividades práticas envolvendo programação. Ao final do curso, o estudante adquire uma base teórica sólida e uma intensa vivência prática em projetos de computação.</P>
             <p>Fica a critério da instituição de ensino a aplicação de atividades complementares, estágio e trabalho de conclusão de curso. </p>
-            <p>A duração média do curso de Análise e Desenvolvimento de Sistemas é de 2 a 3 anos.</p>
+            <div class="bloco-sobre-p-img">
+                <p>A duração média do curso de Análise e Desenvolvimento de Sistemas é de 2 a 3 anos.</p>
+            </div>
+            
             <div class="bloco-mesclar-sobre--como-ingressar">
-                <img id="img-mesclagem-sobre-como-ingrassar"src="imagens/imagem-sobreEcomo-ingressar.png" alt="">
+                <img id="img-mesclagem-sobre-como-ingrassar"src="imagens/imagem-sobreEcomo-ingressar.png" alt="Imagem - Working">
             </div>
     </div>
 
     
-    <div class="bloco-como-ingressar">
+    <div class="bloco-como-ingressar" id="ancora_comoIngressar">
         <h2>Como Ingressar</h2>
         <div class="bloco-como-ingressar-text-1">
             <p>Para poder atuar profissionalmente, o analista de desenvolvimento de sistemas precisa apenas do diploma em um curso reconhecido pelo MEC, já que não é obrigatória a inscrição em nenhum órgão ou conselho da categoria.</p>
@@ -125,40 +130,64 @@
 
 
 
-    <div class="bloco-curso">
+    <div class="bloco-curso" id="ancora_curso">
         <h2>Curso</h2>
         <p>Lorem ipsum dolor sit amet. Ut iusto fugiat est architecto mollitia eum modi dolor hic repudiandae delectus aut ullam sapiente. Qui exercitationem </p>
         
         <h3>Nota de corte:</h3>
         <p>No último ano, as notas de corte registradas para o curso de Análise e Desenvolvimento de Sistemas foram:</p>
 
-        <img src="imagens/curso-notaDeCorte.png" alt="">
+        <img id="img-nota-corte" src="imagens/curso-notaDeCorte.png" alt="">
+        
 
         <h3>Principais Instituições de Ensino:</h3>
         <p>As melhores faculdades segundo o MEC no território brasileiro que oferecem o curso de Análise e Desenvolvimento de Sistemas são:</p>
-        <pre>- Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA)
-
-            - Universidade Federal de Mato Grosso do Sul (UFMS)
-            
-            - Centro Universitário Unicarioca (UNICARIOCA)
-            
-            -Centro Universitário de Maringá (UNICESUMAR)
-            
-            - Centro Universitário Católico de Vitória (UCV)
-            
-            - Faculdade Politécnica de Campinas (POLICAMP)
-            
-            - Universidade Estácio de Sá (UNESA)
-            
-            - Instituto Federal de Educação, Ciência e Tecnologia São Paulo (IFSP)
-            
-            - Centro Universitário Ruy Barbosa Wyden (UNI RUY WYDEN)
-        </pre>
+        <div class="alinhar-bloco-faculdades">
+            <div class="bloco-curso-faculdades">
+                <!--Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA)-->
+                <div id="bloco-curso-faculdades-img1">
+                    <img src="imagens/1-faculdades-ifba.png" alt="Imagen IFBA">
+                </div>
+                <!-- Universidade Federal de Mato Grosso do Sul (UFMS)-->
+                <div id="bloco-curso-faculdades-img2">
+                    <img src="imagens/2-faculdades-ufms.png" alt="Imagem - UFMS">
+                </div>
+                <!--Centro Universitário Unicarioca (UNICARIOCA)-->
+                <div id="bloco-curso-faculdades-img3">
+                    <img src="imagens/3-faculdades-unicarioca.jpg" alt="Imagem - Unicarioca">
+                </div>
+                <!--Centro Universitário de Maringá (UNICESUMAR)-->
+                <div id="bloco-curso-faculdades-img4">
+                    <img src="imagens/4-faculdades-UniCesumar.png" alt="Imagem - UniCesumar">
+                </div>
+                <!--Centro Universitário Católico de Vitória (UCV)-->
+                <div id="bloco-curso-faculdades-img5">
+                    <img src="imagens/5-faculdades-UCV.jpg" alt="Imagem - UCV">
+                </div>
+                <!--Faculdade Politécnica de Campinas (POLICAMP)-->
+                <div id="bloco-curso-faculdades-img6">
+                    <img src="imagens/6-faculdades-POLICAMP.jpg" alt="Imagem - POLICAMP">
+                </div>
+                <!--Universidade Estácio de Sá (UNESA)-->
+                <div id="bloco-curso-faculdades-img7">
+                    <img src="imagens/7-faculdades-UNESA.png" alt="Imagem - UNESA">
+                </div>
+                <!--Instituto Federal de Educação, Ciência e Tecnologia São Paulo (IFSP)-->
+                <div id="bloco-curso-faculdades-img8">
+                    <img src="imagens/8-faculdades-IFSP.png" alt="Imagem - IFSP">
+                </div>
+                <!--Centro Universitário Ruy Barbosa Wyden (UNI RUY WYDEN)-->
+                <div id="bloco-curso-faculdades-img9">
+                    <img src="imagens/9-faculdades-UNIRUYWYDEN.jpg" alt="Imagem - UNI RUY WYDEN">
+                </div>
+            </div>
+        </div>
 
         <h3>Grade Curricular:</h3>
         <p>Grade Curricular é o conjunto de matérias que o aluno estudará durante o curso e pode variar dependendo da Faculdade escolhida.  Este é um exemplo das disciplinas mais comuns encontradas no curso de Análise e Desenvolvimento de Sistemas:     
         </p>
-        <pre>Processos de Negócio;
+        <pre>
+            Processos de Negócio;
             Gerência de Projetos;
             Processo de Software;
             Engenharia de Requisitos;
@@ -195,11 +224,15 @@
             -AWS Certified Solutions Architect – Associate
             -Certified in the Governance of Enterprise IT (CGEIT)
         </pre>
+
+        <div class="bloco-mesclar-curso--mercado-trabalho">
+            <img id="img-mesclagem-curso-mercadoDeTrabalho" src="imagens/mesclar-curso-mercTrabalho.png" alt="Imagem - Work">
+        </div>
     </div>
 
 
 
-    <div class="bloco-Mercado-Trabalho">
+    <div class="bloco-Mercado-Trabalho" id="ancora_mercadoTrabalho">
         <h2> Mercado de Trabalho</h2>
 
         <h3>O que faz o profissional de Análise e Desenvolvimento de Sistemas?</h3>
