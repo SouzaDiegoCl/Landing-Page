@@ -507,8 +507,48 @@ html{
 /*Rodapé ------------*/
 .rodapé{
     background-color: #000000;
-    background-image: url(../imagens/footer_background.PNG);
-    background-size: 100% 100%;
     height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
-/*---------- Rodapé*/
+
+.rodapé .rodapé_imagem img{
+    width: 300px;
+    height: 200px;
+}
+.rodapé_texto{
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    background-color: #5588a457;
+}
+
+.rodapé_texto li{
+    display: inline-block;
+
+}
+.rodapé_texto a{
+    color: #ffffff  ;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.rodapé_texto p{
+    color: #000000  ;
+    font-size: 25px;
+    margin: 20px;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+
+}
+
+/*---------- Rodapé
+
+*/
