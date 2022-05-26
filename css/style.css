@@ -24,10 +24,11 @@ html{
     align-items: center;
 }
 .menu{
+    position: fixed;
     width: 100%;
     max-width: 2560px;
     min-width: 100px;
-    height: 10vh;
+    height: 9vh;
     background-color: rgba(85, 136, 164, 0.400);
     display: flex;
     justify-content: space-around;
@@ -77,6 +78,12 @@ html{
     font-weight: bold;
     font-size: 25px;    
     z-index: 2;
+}
+.header-main button:hover{
+    background-color: #ffffff;
+    border-radius: 13px;
+    transform: scale(1.1);
+    font-size: 26px;    
 }
 /*----------- Cabeçalho */
 
@@ -225,7 +232,7 @@ html{
 .bloco-sobre{
     background-color: #CBE1ED;
     padding: 10px;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 50px;
 }
 .bloco-sobre h2{
@@ -300,7 +307,7 @@ html{
     flex-direction: column;
     color: #F7FBFE;
     padding: 10px;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 50px;
 }
 .bloco-como-ingressar h2{
@@ -344,7 +351,7 @@ html{
     background-color: #F7F8F8;
     color: #5588A4;
     padding: 10px;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 50px;
 }
 .bloco-curso h2{
@@ -375,6 +382,46 @@ html{
     padding-bottom: 30px;
     margin-left: 300px;
 }
+
+.curso_slider{
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.slider_bloco_fotos{
+    width: 1000%;
+    animation: animacao 100s infinite;
+}
+.curso_slider img{
+    width: 9.9%;
+    height: 400px;
+    padding:10px;
+}
+@keyframes animacao {
+    0%{margin-left: 0%;}
+    8%{margin-left: 0%;}
+    11%{margin-left: -100%;}
+    19%{margin-left: -100%;}
+    22%{margin-left: -200%;}
+    30%{margin-left: -200%;}
+    38%{margin-left: -300%;}
+    41%{margin-left: -300%;}
+    49%{margin-left: -400%;}
+    52%{margin-left: -400%;}
+    60%{margin-left: -500%;}
+    68%{margin-left: -500%;}
+    71%{margin-left: -600%;}
+    79%{margin-left: -600%;}
+    82%{margin-left: -700%;}
+    90%{margin-left: -700%;}
+    92%{margin-left: -800%;}
+    98%{margin-left: -800%;}
+    100%{margin-left: -900%;}
+}
+
+
 .bloco-curso-faculdades{
     display: flex;
     flex-direction: row;
@@ -427,7 +474,7 @@ html{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 50px;
 }
 .bloco-Mercado-Trabalho h2{
