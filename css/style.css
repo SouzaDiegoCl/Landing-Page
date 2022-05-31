@@ -7,6 +7,7 @@
 }
 
 body{
+    background-color: #000000;
 }
 html{
     scroll-behavior: smooth;
@@ -507,47 +508,85 @@ html{
 /*Rodapé ------------*/
 .rodapé{
     background-color: #000000;
-    height: 300px;
+    height: 200px;  
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-}
-
-.rodapé .rodapé_imagem img{
-    width: 300px;
-    height: 200px;
-}
-.rodapé_texto{
-    width: 600px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    line-height: 50px;
-    background-color: #5588a457;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.giphy-embed{
+    margin: auto;
 }
 
-.rodapé_texto li{
-    display: inline-block;
+.rodapé ul{
+    list-style: none;
+}
+.rodapé a {
+    color: #ffffff;
+    font-size: 15px;
+}
+.rodapé_listas{
+    margin: auto;
+    width: 5    00px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.rodapé_bloco{
+    width: 170px;
+    height: 150px;
+    margin: auto;
+    margin-top: 50px;    
+}
+.rodapé_bloco ul li a{
+    transition: all 0.5s ease;
+}
+.rodapé_bloco ul li :hover{
+    color: #757575;
+    padding-left: 10px;
+}
 
+.rodapé_bloco_social_medias{
+    width: 200px;
+    height: 150px;
+    margin: auto;
+    margin-top: 50px;
 }
-.rodapé_texto a{
-    color: #ffffff  ;
-    text-decoration: none;
-    font-size: 30px;
-    margin: 20px;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+.rodapé_bloco_social_medias img{
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff96;
+    border-radius: 15%;
 }
-.rodapé_texto p{
-    color: #000000  ;
-    font-size: 25px;
-    margin: 20px;
-    text-decoration: underline;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+.rodapé_bloco_social_medias img{
+    transition: all 0.2s linear;
+    margin: 5px;
+}
+.rodapé_bloco_social_medias #footer_icon_github:hover{
+    background-color: #ffffff;
+    transform: scale(1.2);
+}
 
+.rodapé_bloco_social_medias #footer_icon_linkedin:hover{
+    background-color: #0077B5;
+    transform: scale(1.2);
 }
+.rodapé_bloco_social_medias #footer_icon_instagram:hover{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    
+    transform: scale(1.2);
+}
+
+
+
 
 /*---------- Rodapé
 
