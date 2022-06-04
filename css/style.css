@@ -13,6 +13,10 @@ html{
     scroll-behavior: smooth;
 }
 
+.centralizar{
+    width: 90%;
+    margin: auto;
+}
 
 /*Cabeçalho -----------*/
 .header{
@@ -79,12 +83,12 @@ html{
     font-weight: bold;
     font-size: 25px;    
     z-index: 2;
+    transition: all 0.5s ease;
 }
 .header-main button:hover{
     background-color: #ffffff;
     border-radius: 13px;
     transform: scale(1.1);
-    font-size: 26px;    
 }
 /*----------- Cabeçalho */
 
@@ -162,6 +166,9 @@ html{
     margin-bottom:25px;
     font-weight: bold;
 }
+.header-secundário-texto{
+    width: 70%;
+}
 
 .header-secunário-cel{
     position: relative;
@@ -236,6 +243,7 @@ html{
     padding-top: 60px;
     padding-bottom: 50px;
 }
+
 .bloco-sobre h2{
     font-size: 40px;
     text-indent: 25px;
@@ -347,7 +355,6 @@ html{
 
 
 /*Bloco curso ------------*/
-
 .bloco-curso{
     background-color: #F7F8F8;
     color: #5588A4;
@@ -381,9 +388,11 @@ html{
     width: 65%;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-left: 300px;
 }
-
+#alinhar_img_nota_corte{
+    width: 100%;
+    text-align: center;
+}
 .curso_slider{
     width: 400px;
     height: 400px;
@@ -453,7 +462,7 @@ html{
     display: flex;
     justify-content: end;
     align-items: center;
-    margin-top: -70px;
+    margin-top: -65px;
 }
 #img-mesclagem-curso-mercadoDeTrabalho{
     border-radius: 100px;
