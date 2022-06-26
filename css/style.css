@@ -3,8 +3,9 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Cambria';
+    font-family: 'Titillium Web', sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&family=Titillium+Web&display=swap');
 
 body{
     background-color: #000000;
@@ -32,7 +33,7 @@ html{
     align-items: center;
 }
 nav{
-    background-color: rgba(98, 144, 168, 0.781);
+    background-color: #0c0c0cb7;
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -59,7 +60,7 @@ nav a{
     display: block;
     height: 100%;
     font-size: 20px;
-    padding: 1% 20px;
+    padding: 20px;
 }
 nav a:hover{
     transition: 0.5s;
@@ -78,12 +79,13 @@ nav a:hover{
 .header-main h1{
     color: #ffffff;
     margin-top: 150px;
-    font-size: 65px;
+    font-size: 60px;
     text-shadow: 5px 5px 10px #000000;
 }
 .header-main button{
     color: #000000;
     background-color: #ffffff;
+    font-family: 'Cambria', sans-serif;
     border: 0;
     border-radius: 10px;
     width: 200px;
@@ -118,7 +120,7 @@ nav a:hover{
     width: 100%;
     height: 12%;
     border-radius: 10px;
-    background-color: #5588A4;
+    background-color: #165BAA;
     text-indent: 20px;
     font-weight: bold;
 }
@@ -148,7 +150,7 @@ nav a:hover{
     vertical-align: middle;
     border-radius: 50px;
     padding: 10px;
-    box-shadow: inset  0px 1px 2px #5588A4, 1px 0px 2px #5588A4,0px -1px 2px #5588A4,-1px 0px 2px #5588A4;
+    box-shadow: inset  0px 1px 2px #165BAA, 1px 0px 2px #165BAA,0px -1px 2px #165BAA,-1px 0px 2px #165BAA;
 
 }   
 .bloco-resumo-main img{
@@ -163,7 +165,7 @@ nav a:hover{
 .header-secundário{
     width: 100%;
     height: 150vh;
-    background-color: #A6A6A6;
+    background-color: #c3d0db;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -181,7 +183,7 @@ nav a:hover{
 
 .header-secunário-cel{
     position: relative;
-    background-color: #5588A4;
+    background-color: #165BAA;
     width: 750px;
     height: 350px;
     border-radius: 50px;
@@ -247,7 +249,8 @@ nav a:hover{
 
 /*Bloco sobre ---------*/
 .bloco-sobre{
-    background-color: #CBE1ED;
+    background-color: #427bbd;
+    color: #000000;
     padding: 10px;
     padding-top: 60px;
     padding-bottom: 50px;
@@ -293,7 +296,7 @@ nav a:hover{
 }
 .bloco-sobre img{
     border-radius: 200px;
-    box-shadow: 15px 10px 1px #5588A4;
+    box-shadow: 15px 10px 1px #ffffff;
     width: 450px;
 }
 
@@ -309,10 +312,11 @@ nav a:hover{
     align-items: center;
     margin-top: -65px;
 }
-#img-mesclagem-sobre-como-ingrassar{
+#img-mesclagem-sobre-como-ingressar{
     border-radius: 200px;
     box-shadow: 15px 10px 1px #ffffff;
     width: 450px;
+    opacity: 1;
 }
 
 /*----------- Bloco mesclar - sobre + como ingressar*/
@@ -320,10 +324,10 @@ nav a:hover{
 
 /*Bloco como ingressar ---------*/
 .bloco-como-ingressar{
-    background-color: #70a2bd;
+    background-color: #1c1347;
     display: flex;
     flex-direction: column;
-    color: #F7FBFE;
+    color: #c3d0db;
     padding: 10px;
     padding-top: 60px;
     padding-bottom: 50px;
@@ -366,8 +370,8 @@ nav a:hover{
 
 /*Bloco curso ------------*/
 .bloco-curso{
-    background-color: #F7F8F8;
-    color: #5588A4;
+    background-color: #c3d0db;
+    color: #1c1347;
     padding: 10px;
     padding-top: 60px;
     padding-bottom: 50px;
@@ -410,6 +414,8 @@ nav a:hover{
     height: 280px;
     margin: auto;
     position: relative;
+    background-color: #c3d0db;
+
     margin-top: 50px;
     width: 100%;
     display: grid;
@@ -448,10 +454,11 @@ nav a:hover{
     /*Para fazer com que a imagem mova no eixo Z(profundidade) é necessário adicionar essa propriedade chamada PERSPECTIVE*/
 
 }
-.slide a,img{
+.slide a, .slide img{
     width: 100%;
     transition: transform 0.5s;
-    cursor:pointer;
+    cursor:pointer;    
+    background-color: #ffffff;
     z-index: 2;
     opacity: 0.8;
 
@@ -467,11 +474,12 @@ nav a:hover{
 /* GRADIENT SHADOWS */
 
 .slider::before, .slider::after{
-    background: linear-gradient(to right, #ffffff 0%, #ffffff00 100%);
+    background: linear-gradient(to right, #ffffff 0%, #5b577200 100%);
     content: '';
     height: 100%;
     position: absolute;
-    width:25%;
+    width:8%;
+    border-radius: 15px;
     z-index: 2;
 }
 .slider::before {
@@ -496,9 +504,11 @@ nav a:hover{
 }
 #img-mesclagem-curso-mercadoDeTrabalho{
     border-radius: 100px;
-    box-shadow: 15px 15px 2px #000000;
+    box-shadow: 10px 10px 2px #ffffff;
     width: 400px;
     height: 250px;
+    opacity: 1;
+
 }
 /*----------- Bloco mesclar - curso + como mercado de trabalho*/
 
@@ -509,7 +519,7 @@ nav a:hover{
 /*Bloco mercado de trabalho ------------*/
 
 .bloco-Mercado-Trabalho{
-    background-color: #A2C7DB;
+    background-color: #998ae6;
     color: #000000;
     display: flex;
     flex-direction: column;
@@ -554,6 +564,7 @@ nav a:hover{
     justify-content: center;
     margin: auto;
     flex-wrap: wrap;
+    font-family: 'Roboto Flex', sans-serif;
 }
 .giphy-embed{
     margin: auto;
