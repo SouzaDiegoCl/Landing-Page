@@ -252,8 +252,8 @@ nav a:hover{
     background-color: #427bbd;
     color: #000000;
     padding: 10px;
-    padding-top: 60px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 0px;
 }
 
 .bloco-sobre h2{
@@ -303,6 +303,64 @@ nav a:hover{
 
 /*--------- Bloco sobre*/
 
+/*Bloco perfil ---------*/
+.bloco-perfil{
+    background-color: #427bbd;
+    color: #000000;
+    padding: 10px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.bloco-perfil h2{
+    font-size: 30px;
+    text-indent: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.bloco-perfil h3{
+    font-size: 25px;
+    text-indent: 25px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.bloco-perfil p{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 20px;
+    padding-top:20px    ;
+    padding-bottom: 20px;
+}
+.bloco-perfil-text-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+.bloco-perfil-p-img{
+    width: 65%;
+}
+.bloco-perfil-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.bloco-perfil img{
+    border-radius: 200px;
+    box-shadow: 15px 10px 1px #ffffff;
+    width: 450px;
+}
+
+
+/*--------- Bloco sobre*/
+
+
+
 /*Bloco mesclar - sobre + como ingressar ----------*/
 .bloco-mesclar-sobre--como-ingressar{
     position: absolute;
@@ -329,7 +387,7 @@ nav a:hover{
     flex-direction: column;
     color: #c3d0db;
     padding: 10px;
-    padding-top: 60px;
+    padding-top: 70px;
     padding-bottom: 50px;
 }
 .bloco-como-ingressar h2{
@@ -373,7 +431,7 @@ nav a:hover{
     background-color: #c3d0db;
     color: #1c1347;
     padding: 10px;
-    padding-top: 60px;
+    padding-top: 70px;
     padding-bottom: 50px;
 }
 .bloco-curso h2{
@@ -524,7 +582,7 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    padding-top: 60px;
+    padding-top: 70px;
     padding-bottom: 50px;
 }
 .bloco-Mercado-Trabalho h2{

@@ -1,0 +1,7 @@
+ <h3>Como é a faculdade de Análise e Desenvolvimento de Sistemas?</h3>
+                <p>Segundo as Diretrizes Curriculares Nacionais definidas pelo Ministério da Educação (MEC), a formação em Análise e Desenvolvimento de Sistemas se enquadra como um curso tecnológico da área de Informação e Comunicação. Por isso, deve apresentar conteúdos gerais sobre esse campo, além dos conteúdos específicos da área.</p>
+                <P>Há muitas disciplinas de ciências exatas e atividades práticas envolvendo programação. Ao final do curso, o estudante adquire uma base teórica sólida e uma intensa vivência prática em projetos de computação.</P>
+                <p>Fica a critério da instituição de ensino a aplicação de atividades complementares, estágio e trabalho de conclusão de curso. </p>
+                <div class="bloco-sobre-p-img">
+                    <p>A duração média do curso de Análise e Desenvolvimento de Sistemas é de 2 a 3 anos.</p>
+                </div>
