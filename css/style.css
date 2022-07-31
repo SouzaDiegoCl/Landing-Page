@@ -119,7 +119,7 @@ nav a:hover{
     align-items: center;
     width: 100%;
     height: 12%;
-    border-radius: 10px;
+    border-radius: 10px 10px 5px 5px;
     background-color: #165BAA;
     text-indent: 20px;
     font-weight: bold;
@@ -432,7 +432,7 @@ nav a:hover{
     color: #1c1347;
     padding: 10px;
     padding-top: 70px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 .bloco-curso h2{
     font-size: 30px;
@@ -514,6 +514,7 @@ nav a:hover{
 }
 .slide a, .slide img{
     width: 100%;
+    border-radius: 25px;
     transition: transform 0.5s;
     cursor:pointer;    
     background-color: #ffffff;
@@ -532,12 +533,12 @@ nav a:hover{
 /* GRADIENT SHADOWS */
 
 .slider::before, .slider::after{
-    background: linear-gradient(to right, #ffffff 0%, #5b577200 100%);
+    background: linear-gradient(to right,  rgb(62, 62, 62) 0%,  rgba(62, 62, 62, 0) 100%);
     content: '';
     height: 100%;
     position: absolute;
     width:8%;
-    border-radius: 15px;
+    border-radius: 10px 0px 0px 10px;
     z-index: 2;
 }
 .slider::before {
@@ -549,6 +550,95 @@ nav a:hover{
     top:0;
     transform: rotateZ(180deg);
 }
+
+/*Card certificações --------------*/
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+.card{
+    background: white;
+    width: 240px;
+    margin: 10px;   
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    background-color: rgb(62, 62, 62);
+    color: white;
+}
+.card:hover{
+    background-color: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.4s ease;
+}
+.card h2{
+    padding: 5px;
+    font-size: 18px;
+}
+.card p{
+    font-size: 13px;
+    padding-bottom: 40px ;
+}
+
+.card a{
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+.card-img{
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: 100% 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.car-1{
+    background-image:url(../imagens/certificados/itil-foundation.png) ;    
+}
+.car-2{
+    background-image:url(../imagens/certificados/cissp.png) ;
+}
+.car-3{
+    background-image:url(../imagens/certificados/oracle\ \(2\).png) ;
+}
+.car-4{
+    background-image:url(../imagens/certificados/dell.png) ;
+}
+.car-5{
+    background-image:url(../imagens/certificados/vmware.png) ;   
+}
+.car-6{
+    background-image:url(../imagens/certificados/mcsd.png) ;   
+}
+.car-7{
+    background-image:url(../imagens/certificados/ccie.png) ;   
+}
+.car-8{
+    background-image:url(../imagens/certificados/pmp.png) ;   
+}
+
+
+
+
+
+/*----------Card certificações*/
+
+
+
+
+
 /*------------ Bloco curso*/
 
 /*Bloco mesclar - curso + mercado de trabalho ----------*/
